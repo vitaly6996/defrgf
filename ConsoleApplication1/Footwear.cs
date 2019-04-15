@@ -8,8 +8,22 @@ namespace ConsoleApplication1
 {
     class Footwear
     {
-        string prod;
-        float size;
-        double price;
+        public Footwear(string prod, float size, double price) 
+        {
+            prod=prod;
+            size=size;
+            price=price;
+        }
+        public string prod {
+            get; set;
+        }
+        public float size {
+            get; set;
+        }
+        public double price {
+            get; set;
+        }
+    }
+        
     }
 }
