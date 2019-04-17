@@ -8,22 +8,37 @@ namespace ConsoleApplication1
 {
     class Footwear
     {
-        public Footwear(string prod, float size, double price) 
+
+        public string Prod { get; set; }
+
+
+        public double Size { get; set; }
+
+        public double Price { get; set; }
+
+
+        public Footwear()
         {
-            prod=prod;
-            size=size;
-            price=price;
+            this.Prod = Prod;
+            this.Size = Size;
+            this.Price = Price;
+
         }
-        public string prod {
-            get; set;
+        public void Writing()
+        {      
+                
+                Console.WriteLine("Введите производителя");
+                this.Prod = Convert.ToString(Console.ReadLine());
+                Console.WriteLine("Введите размер");
+                this.Size = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Введите цену");
+                this.Price = Convert.ToDouble(Console.ReadLine());
+                
         }
-        public float size {
-            get; set;
+
+        public override string ToString()
+        {
+            return "Производитель - " + this.Prod + " Размер - " + this.Size + " Цена - " + this.Price;
         }
-        public double price {
-            get; set;
-        }
+    } 
     }
-        
-    }
-}
