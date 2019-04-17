@@ -8,7 +8,6 @@ namespace ConsoleApplication1
 {
     class Footwear
     {
-
         public string Prod { get; set; }
 
 
@@ -25,20 +24,20 @@ namespace ConsoleApplication1
 
         }
         public void Writing()
-        {      
-                
-                Console.WriteLine("Введите производителя");
-                this.Prod = Convert.ToString(Console.ReadLine());
-                Console.WriteLine("Введите размер");
-                this.Size = Convert.ToDouble(Console.ReadLine());
-                Console.WriteLine("Введите цену");
-                this.Price = Convert.ToDouble(Console.ReadLine());
-                
+        {
+
+            Console.WriteLine("Введите производителя");
+            this.Prod = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Введите размер");
+            this.Size = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите цену");
+            this.Price = Convert.ToDouble(Console.ReadLine());
+
         }
 
         public override string ToString()
         {
             return "Производитель - " + this.Prod + " Размер - " + this.Size + " Цена - " + this.Price;
         }
-    } 
     }
+}
